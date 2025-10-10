@@ -17,6 +17,21 @@
   <script>
     (function() {
       const map = {
+        // Extensionless to .html
+        "/": "/",
+        "/index": "/",
+        "/education": "/education.html",
+        "/courses": "/courses.html",
+        "/materials": "/materials.html",
+        "/diploma/robotics-engineering": "/diploma/robotics-engineering.html",
+        "/diploma/ai-engineering": "/diploma/ai-engineering.html",
+        "/diploma/embedded-engineering": "/diploma/embedded-engineering.html",
+        "/courses/ai-crash-course": "/courses/ai-crash-course.html",
+        "/courses/robotic-developer": "/courses/robotic-developer.html",
+        "/courses/linux-system-administration": "/courses/linux-system-administration.html",
+        "/courses/computer-vision": "/courses/computer-vision.html",
+        "/courses/data-science": "/courses/data-science.html",
+        // Legacy .md
         "/README.md": "/",
         "/education.md": "/education.html",
         "/trainingmaterials.md": "/materials.html",
@@ -30,7 +45,8 @@
         "/diploma_/002_artificial_intelligence_engineering.md": "/diploma/ai-engineering.html",
         "/diploma_/006_embedded_engineering.md": "/diploma/embedded-engineering.html"
       };
-      const p = location.pathname;
+      let p = location.pathname;
+      if (p.length > 1 && p.endsWith('/')) p = p.slice(0, -1);
       const target = map[p];
       if (target) location.replace(target);
     })();
