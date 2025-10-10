@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embedded System Engineering Diploma — Deep Blue AI Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }}}}</script>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <div class="max-w-3xl mx-auto px-4">
+    <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+      <div class="py-3 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold tracking-tight">Deep Blue AI Lab</a>
+        <nav class="flex gap-4 text-sm">
+          <a class="hover:text-cyan-300" href="/education.html">Back to Education</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-10 prose prose-invert prose-slate">
+      <h1>Embedded System Engineering Diploma</h1>
+      <p>Become an embedded/firmware engineer: STM32, drivers, RTOS, Embedded Linux (Yocto/Buildroot).</p>
+
+      <h2>Foundational and Intermediate Courses</h2>
+      <ul>
+        <li>Linux System Administration</li>
+        <li>C & C++</li>
+        <li>Concurrency & Multithreading</li>
+        <li>ARM Cortex Based Architectures - STM32F4</li>
+        <li>Embedded Linux System (Traditional, Buildroot, Yocto)</li>
+      </ul>
+
+      <h2>Advanced Courses (Video Lectures selection in progress)</h2>
+      <ul>
+        <li>Assembly Language</li>
+        <li>ARM Bootloader U-Boot</li>
+        <li>Realtime Operating System (FreeRTOS)</li>
+        <li>Graphic Workshop TouchGFX</li>
+      </ul>
+
+      <h2>Learning Style</h2>
+      <ul>
+        <li>In Campus Class</li>
+        <li>Online Live Class</li>
+        <li>Online Recording (Google Classroom) Class</li>
+      </ul>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-sm text-slate-400">© <span id="y"></span> ROM Dynamics</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

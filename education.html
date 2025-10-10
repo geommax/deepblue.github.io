@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education — Deep Blue AI Lab</title>
+  <meta name="description" content="Diplomas and courses: Robotics, AI, Embedded Systems" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }}}}</script>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <div class="max-w-6xl mx-auto px-4">
+    <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+      <div class="py-3 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold tracking-tight">Deep Blue AI Lab</a>
+        <nav class="flex gap-4 text-sm">
+          <a class="hover:text-cyan-300" href="/index.html">Home</a>
+          <a class="hover:text-cyan-300" href="/education.html">Education</a>
+          <a class="hover:text-cyan-300" href="/courses.html">Courses</a>
+          <a class="hover:text-cyan-300" href="/materials.html">Materials</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-10">
+      <h1 class="text-3xl font-extrabold">Enhanced Your Education with us</h1>
+      <p class="mt-2 text-slate-300">We offer three engineering diplomas and many bundles.</p>
+
+      <section class="mt-8 grid md:grid-cols-3 gap-6">
+        <a href="/diploma/robotics-engineering.html" class="block p-6 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500">
+          <h3 class="font-semibold">Robotics Engineering Diploma (1 Year)</h3>
+          <p class="mt-2 text-sm text-slate-300">Build autonomous mobile robots with ROS2, SLAM, Nav2, Micro-ROS and more.</p>
+        </a>
+        <a href="/diploma/ai-engineering.html" class="block p-6 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500">
+          <h3 class="font-semibold">AI Engineering Diploma (6 Months)</h3>
+          <p class="mt-2 text-sm text-slate-300">ML, CV, NLP, DL fundamentals to deploy real-world AI systems.</p>
+        </a>
+        <a href="/diploma/embedded-engineering.html" class="block p-6 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500">
+          <h3 class="font-semibold">Embedded System Engineering Diploma (9 Months)</h3>
+          <p class="mt-2 text-sm text-slate-300">STM32, RTOS, Embedded Linux (Yocto/Buildroot), drivers and more.</p>
+        </a>
+      </section>
+
+      <section class="mt-10">
+        <h2 class="text-2xl font-bold">Popular Bundles</h2>
+        <ul class="mt-4 grid md:grid-cols-2 gap-3">
+          <li><a class="text-cyan-400 hover:text-cyan-300" href="/courses/ai-crash-course.html">AI Crash Course</a></li>
+          <li><a class="text-cyan-400 hover:text-cyan-300" href="/courses/robotic-developer.html">Robotic Developer Course</a></li>
+          <li><a class="text-cyan-400 hover:text-cyan-300" href="/courses/linux-system-administration.html">Linux System & Server Administration</a></li>
+          <li><a class="text-cyan-400 hover:text-cyan-300" href="/courses/data-science.html">Data Science and Statistics</a></li>
+          <li><a class="text-cyan-400 hover:text-cyan-300" href="/courses/computer-vision.html">Computer Vision Master Class</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-sm text-slate-400">© <span id="y"></span> ROM Dynamics</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

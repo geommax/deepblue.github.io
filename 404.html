@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found — Deep Blue AI Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="max-w-xl text-center">
+      <h1 class="text-4xl font-extrabold">404</h1>
+      <p class="mt-3 text-slate-300">Sorry, we couldn’t find that page.</p>
+      <a href="/" class="mt-6 inline-block px-5 py-3 rounded-lg bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400">Go home</a>
+    </div>
+  </div>
+  <script>
+    (function() {
+      const map = {
+        "/README.md": "/",
+        "/education.md": "/education.html",
+        "/trainingmaterials.md": "/materials.html",
+        "/bundle_courses.md": "/courses.html",
+        "/bundle_courses/015_linuxsystemadministration.md": "/courses/linux-system-administration.html",
+        "/bundle_courses/022_AICrashCourse.md": "/courses/ai-crash-course.html",
+        "/bundle_courses/007_RoboticDeveloperCourses.md": "/courses/robotic-developer.html",
+        "/bundle_courses/098_data_science.md": "/courses/data-science.html",
+        "/bundle_courses/099_computer_vision.md": "/courses/computer-vision.html",
+        "/diploma_/001_robotics_engineering.md": "/diploma/robotics-engineering.html",
+        "/diploma_/002_artificial_intelligence_engineering.md": "/diploma/ai-engineering.html",
+        "/diploma_/006_embedded_engineering.md": "/diploma/embedded-engineering.html"
+      };
+      const p = location.pathname;
+      const target = map[p];
+      if (target) location.replace(target);
+    })();
+  </script>
+</body>
+</html>
