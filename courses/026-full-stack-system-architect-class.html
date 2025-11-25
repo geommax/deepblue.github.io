@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full-Stack System Architect Class — Deep Blue AI Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }}}}</script>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <div class="max-w-4xl mx-auto px-4">
+    <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+      <div class="py-3 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold tracking-tight">Deep Blue AI Lab</a>
+        <nav class="flex items-center gap-3 text-sm">
+          <span class="px-2 py-0.5 rounded border border-slate-700 text-slate-300">Course ID: 026</span>
+          <a class="hover:text-cyan-300" href="/education.html">Back to Education</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-10">
+      <!-- Hero / Flyer header -->
+      <section class="rounded-xl border border-slate-800 bg-slate-900/40 p-6">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h1 class="text-2xl md:text-3xl font-extrabold">Full-Stack System Architect Class</h1>
+            <p class="mt-1 text-slate-400 text-sm">Course ID: 026</p>
+          </div>
+        </div>
+        <div class="mt-5 space-y-3 text-slate-200">
+          <p>System Architect Mastery: Infrastructure (Data Center), Containerization (Development, isolated Production Environment), Custom OS Design (Robotics, AI, iOT, Embedded System) and CI/CD Automation Pipeline (DevOps - Build system)</p>
+        </div>
+      </section>
+
+      <!-- Outline -->
+      <section class="mt-8">
+        <h2 class="text-xl font-bold">Course Outline</h2>
+        
+        <!-- Module 01 -->
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <h3 class="font-semibold text-cyan-300">Module 01: Core Linux Infrastructure, Networking & Security Foundation</h3>
+          <p class="mt-2 text-slate-300 text-sm">ဤ Module တွင် System Architect တစ်ဦးအတွက် မရှိမဖြစ်လိုအပ်သော Linux ၏ အခြေခံအကျဆုံး တည်ဆောက်ပုံ၊ Network စီမံခန့်ခွဲမှု နှင့် System Security ဆိုင်ရာ အဓိက အချက်အလက်များကို (Red Hat/Enterprise Focus) ဖြင့် လေ့လာရပါမည်။</p>
+          
+          <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
+            <li><strong>1.1 Core Linux Fundamentals</strong> Linux OS Basics, File System Hierarchy (FHS), User and Group Management, Process and Job Management.</li>
+            <li><strong>1.2 Package Management & SSH</strong> Managing Software Packages (YUM/DNF), Using Secure Shell (`ssh`) for remote administration and key-based authentication.</li>
+            <li><strong>1.3 Networking Configuration</strong> IP Addressing, Subnetting, Gateway Concepts. Static vs. Dynamic Configuration. Using nmcli (Command-Line) and nmtui (TUI) for network setup.</li>
+            <li><strong>1.4 Network Packet Types & Protocol</strong> Understanding the OSI Model. Deep dive into fundamental network protocols: TCP, IP, and UDP (Architectural understanding of connection states and reliability).</li>
+            <li><strong>1.5 System Security Principles</strong> SELinux Architecture (Targeted, Enforcing/Permissive Modes, Contexts). FirewallD configuration (Zones, Services, Ports).</li>
+            <li><strong>1.6 Monitoring, Logging & Scheduling</strong> System Logging (Journald/rsyslog) and Log Analysis. Automated Task Scheduling using Cron (`chron` concepts).</li>
+            <li><strong>1.7 LAB EXAM</strong> Practical Exam: Complete configuration of a secure, networked Linux server environment (Hands-on practical assessment).</li>
+          </ul>
+        </div>
+        
+        <!-- Module 02 -->
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <h3 class="font-semibold text-cyan-300">Module 02: Cloud, Virtualization & Containerization Architecture</h3>
+          <p class="mt-2 text-slate-300 text-sm">ခေတ်မီ Application များအား Deployment ပြုလုပ်ရာတွင် အသုံးပြုသည့် နည်းပညာများဖြစ်သော Cloud, Virtualization နှင့် Containerization (Docker) တို့၏ တည်ဆောက်ပုံ၊ အားသာချက်/အားနည်းချက် နှင့် စီမံခန့်ခွဲမှုပုံစံများကို လေ့လာရပါမည်။</p>
+          
+          <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
+            <li><strong>2.1 Cloud Computing Fundamentals</strong> Service Models (IaaS, PaaS, SaaS) Concepts. Deployment Models (Public, Private, Hybrid). Architectural implications of Cloud vs. On-Premise.</li>
+            <li><strong>2.2 Virtualization vs. Containerization</strong> Architectural differences and use cases (e.g., KVM vs. Docker). Understanding resource isolation and overhead.</li>
+            <li><strong>2.3 Docker Administration Mastery</strong> Docker Engine Installation and Configuration. Images, Containers, and Dockerfile creation. Container Networking and Storage Volumes.</li>
+            <li><strong>2.4 Container Orchestration Introduction</strong> Kubernetes (K8s) Intro: Pods, Nodes, Deployments, and Services Concepts. Docker Swarm Intro: Basic cluster management and scaling.</li>
+          </ul>
+        </div>
+        
+        <!-- Module 03 -->
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <h3 class="font-semibold text-cyan-300">Module 03: CI/CD & Build System Automation Pipeline</h3>
+          <p class="mt-2 text-slate-300 text-sm">DevOps ၏ အဓိက အစိတ်အပိုင်းဖြစ်သော CI/CD Pipeline တည်ဆောက်ပုံ၊ C++/Web Application များအတွက် Build System များ (CMAKE, Jenkins) အသုံးပြုပုံနှင့် Automation Pipeline ဒီဇိုင်းဆွဲခြင်းတို့ကို လေ့လာရပါမည်။</p>
+          
+          <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
+            <li><strong>3.1 Build Systems and Automation Tools</strong> CMAKE (Cross-platform build system) concepts for compiling C/C++ projects. Introduction to other common build tools.</li>
+            <li><strong>3.2 Build Agent Configuration</strong> Setting up a Build Agent (e.g., Jenkins). Understanding agent/master architecture and distributed builds.</li>
+            <li><strong>3.3 CI/CD Pipeline Design</strong> Principles of Continuous Integration (CI) and Continuous Delivery (CD). Pipeline Stages (Source, Build, Test, Deploy).</li>
+            <li><strong>3.4 DevOps Pipeline Implementation</strong> Designing a CI/CD pipeline for C++ Applications. Designing a CI/CD pipeline for Web Applications. Using GitHub Actions, Jenkins, or other build system agents for practical implementation overview.</li>
+          </ul>
+        </div>
+        
+        <!-- Module 04 -->
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <h3 class="font-semibold text-cyan-300">Module 04: Storage, Boot Process & Embedded OS Design</h3>
+          <p class="mt-2 text-slate-300 text-sm">System Architect တစ်ဦး၏ အဓိက တာဝန်ဖြစ်သော Storage Management (LVM), Boot Process နှင့် Kernel Module များကို နားလည်ခြင်း၊ Robotics/IoT/AI စနစ်များအတွက် Custom OS များကို (Buildroot/Yocto) ဖြင့် တည်ဆောက်ခြင်းတို့ကို လေ့လာရပါမည်။</p>
+          
+          <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
+            <li><strong>4.1 Linux Storage Management</strong> Partitioning Schemes (GPT vs. MBR). Physical vs. Logical Volumes. Linux Volume Management (LVM) for flexible storage.</li>
+            <li><strong>4.2 File Systems & Mounting</strong> Common Linux File Systems (ext4, XFS). Managing Mount Points. Network File System (<strong>NFS</strong>) setup and configuration.</li>
+            <li><strong>4.3 Linux Boot Process Deep Dive</strong> Detailed breakdown of the kernel loading and initialization process. The role of initramfs and systemd.</li>
+            <li><strong>4.4 Linux Kernel Modules</strong> Understanding Kernel Architecture. Loading, Unloading, and Managing Kernel Modules (Crucial for Custom Hardware Support).</li>
+            <li><strong>4.5 Custom OS Build Systems</strong> Buildroot Introduction: Creating a simple, minimal Linux root file system. Yocto Project (Poky) Architecture and Workflow.</li>
+            <li><strong>4.6 Custom OS Build Lab</strong> Test Build: Executing a <strong>Yocto</strong> or <strong>Buildroot</strong> build process to generate a complete custom OS image (for Embedded/IoT/AI systems).</li>
+            <li><strong>4.7 FINAL EXAM</strong> Comprehensive theoretical and conceptual exam covering all modules.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Duration -->
+      <section class="mt-8">
+        <div class="rounded-xl border border-slate-800 bg-slate-900/40 p-5 flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Duration</h3>
+          <p class="text-cyan-300 font-semibold">2 Months</p>
+        </div>
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <p class="font-semibold">Schedule</p>
+          <p class="text-slate-300 text-sm">1.5 hours, in a day, Fri, Sat, Sun<br>Will start from 19. Dec. 2025</p>
+        </div>
+      </section>
+
+      <!-- Learning Style and Fees -->
+      <section class="mt-8">
+        <h2 class="text-xl font-bold">Class Fees</h2>
+        <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+          <p class="font-semibold">Total Course Fee</p>
+          <p class="text-slate-300 text-sm">650,000 MMK</p>
+        </div>
+        <div class="mt-4 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-amber-200">
+          <p class="font-semibold">Discount</p>
+          <p>Contact US</p>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section class="mt-8">
+        <h2 class="text-xl font-bold">Contact</h2>
+        <div class="mt-3 grid md:grid-cols-2 gap-4">
+          <div class="rounded-lg border border-slate-800 bg-slate-900/40 p-4">
+            <ul class="text-slate-200 text-sm space-y-1">
+              <li>Phone: 09250074008 / 09250074005</li>
+              <li>Facebook: <a class="text-cyan-300 hover:text-cyan-200" href="https://www.facebook.com/deepblueailab/" target="_blank" rel="noopener">Deep Blue AI Lab</a></li>
+              <li>Website: <a class="text-cyan-300 hover:text-cyan-200" href="https://deepblue.romdynamics.com" target="_blank" rel="noopener">deepblue.romdynamics.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full details -->
+      <section class="mt-10">
+        <h2 class="text-xl font-bold">သင်တန်းအကြောင်းအရာအပြည့်အစုံ</h2>
+        <div class="mt-3 space-y-3 text-slate-200">
+          <p>Full-Stack System Architect Class သည် ခေတ်မှီ System Architecture များကို တည်ဆောက်ရေးအတွက် လိုအပ်သော Core Infrastructure, Containerization, Custom OS Design နှင့် CI/CD Automation Pipeline တို့ကို အပြည့်အဝ နားလည်စေရန် ဖွံ့ဖြိုးတီထွင်ထားပါသည်။ ဤသင်တန်းကို တက်ရောက်ခြင်းဖြင့် Robotics, AI, IoT နှင့် Embedded Systems များအတွက် စနစ်ကျသော System Architecture များကို တည်ဆောက်နိုင်မည်ဖြစ်ပါသည်။</p>
+        </div>
+      </section>
+
+      <!-- Audience -->
+      <section class="mt-10">
+        <h2 class="text-xl font-bold">ဘယ်သူတွေ လေ့လာသင့်လဲ</h2>
+        <div class="mt-3 space-y-3 text-slate-200">
+          <p>System Architecture ကို နက်နက်နဲနဲ လေ့လာလိုသူများ၊ DevOps Engineers, System Administrators, Cloud Architects, Software Developers တို့အတွက် အထူးသင့်တော်ပါသည်။ ခေတ်မှီ Technology Stack များကို အသုံးပြု၍ စနစ်ကျသော Architecture များကို တည်ဆောက်နိုင်မည့် အရည်အချင်းရှိသူများ တက်ရောက်လို့ရပါသည်။</p>
+        </div>
+      </section>
+
+      <!-- Back flyer footer quote -->
+      <section class="mt-10">
+        <blockquote class="rounded-xl border border-slate-800 bg-slate-900/40 p-5 text-slate-300 italic">
+          We are proud to have already trained many students from Korea, London, Singapore, and Thailand who have gone on to work as employees in IT and engineering, including robotics companies in other countries. Our students have a deep understanding of the latest tools and technologies in the field of AI and robotics and are equipped with the skills and knowledge they need to pursue successful careers in this exciting field.
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-sm text-slate-400">© 2022 Deep Blue AI Lab</footer>
+  </div>
+</body>
+</html>
