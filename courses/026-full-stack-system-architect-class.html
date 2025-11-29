@@ -70,28 +70,95 @@
         <!-- Module 03 -->
         <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
           <h3 class="font-semibold text-cyan-300">Module 03: CI/CD & Build System Automation Pipeline</h3>
-          <p class="mt-2 text-slate-300 text-sm">DevOps ၏ အဓိက အစိတ်အပိုင်းဖြစ်သော CI/CD Pipeline တည်ဆောက်ပုံ၊ C++/Web Application များအတွက် Build System များ (CMAKE, Jenkins) အသုံးပြုပုံနှင့် Automation Pipeline ဒီဇိုင်းဆွဲခြင်းတို့ကို လေ့လာရပါမည်။</p>
+          <p class="mt-2 text-slate-300 text-sm">DevOps ၏ အဓိက အစိတ်အပိုင်းဖြစ်သော CI/CD Pipeline တည်ဆောက်ပုံ၊ Software Development Life Cycle (SDLC) ၏ အခြေခံမူများ၊ C++/Web Application များအတွက် Build System များ (CMAKE, GitHub Actions) အသုံးပြုပုံနှင့် Automation Pipeline ဒီဇိုင်းဆွဲခြင်းတို့ကို လေ့လာရပါမည်။</p>
           
           <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
-            <li><strong>3.1 Build Systems and Automation Tools</strong> CMAKE (Cross-platform build system) concepts for compiling C/C++ projects. Introduction to other common build tools.</li>
-            <li><strong>3.2 Build Agent Configuration</strong> Setting up a Build Agent (e.g., Jenkins). Understanding agent/master architecture and distributed builds.</li>
-            <li><strong>3.3 CI/CD Pipeline Design</strong> Principles of Continuous Integration (CI) and Continuous Delivery (CD). Pipeline Stages (Source, Build, Test, Deploy).</li>
-            <li><strong>3.4 DevOps Pipeline Implementation</strong> Designing a CI/CD pipeline for C++ Applications. Designing a CI/CD pipeline for Web Applications. Using GitHub Actions, Jenkins, or other build system agents for practical implementation overview.</li>
+            <li><strong>3.0 Software Development Life Cycle (SDLC) Principles</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Introduction to SDLC: Phases and models (e.g., Waterfall, Agile, DevOps).</li>
+                <li>The Role of Automation in SDLC: How CI/CD transforms the traditional SDLC.</li>
+                <li>Version Control Mastery: Deep dive into Git flow and branching strategies for CI/CD.</li>
+              </ul>
+            </li>
+            <li><strong>3.1 Build Systems and Automation Tools</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>CMAKE (Cross-platform build system) concepts for compiling C/C++ projects.</li>
+                <li>Package Management tools for Web (e.g., npm, yarn) and other common build tools.</li>
+              </ul>
+            </li>
+            <li><strong>3.2 CI/CD Platform and Agent Configuration</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Introduction to GitHub Actions: Workflows, Runners (managed agents), Jobs, and Steps architecture.</li>
+                <li>Setting up GitHub Actions: Using the .github/workflows directory and YAML syntax.</li>
+                <li>Secrets Management: Handling credentials securely within the pipeline.</li>
+              </ul>
+            </li>
+            <li><strong>3.3 CI/CD Pipeline Design</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Principles of Continuous Integration (CI) and Continuous Delivery/Deployment (CD).</li>
+                <li>Pipeline Stages: Detailed breakdown of Source, Build, Test, Security Scanning, and Deploy stages.</li>
+                <li>Designing secure and efficient pipeline flows (e.g., fan-out/fan-in strategies).</li>
+              </ul>
+            </li>
+            <li><strong>3.4 DevOps Pipeline Implementation (Lab Focus)</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Implementing a complete CI/CD pipeline for C++ Applications using CMAKE and GitHub Actions.</li>
+                <li>Implementing a complete CI/CD pipeline for Web Applications using Node/npm and GitHub Actions.</li>
+                <li>Practical implementation overview using GitHub Actions for automated testing and deployment.</li>
+              </ul>
+            </li>
           </ul>
         </div>
         
         <!-- Module 04 -->
         <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
-          <h3 class="font-semibold text-cyan-300">Module 04: Storage, Boot Process & Embedded OS Design</h3>
-          <p class="mt-2 text-slate-300 text-sm">System Architect တစ်ဦး၏ အဓိက တာဝန်ဖြစ်သော Storage Management (LVM), Boot Process နှင့် Kernel Module များကို နားလည်ခြင်း၊ Robotics/IoT/AI စနစ်များအတွက် Custom OS များကို (Buildroot/Yocto) ဖြင့် တည်ဆောက်ခြင်းတို့ကို လေ့လာရပါမည်။</p>
+          <h3 class="font-semibold text-cyan-300">Module 04: Embedded Kernel, Storage & Custom OS Design</h3>
+          <p class="mt-2 text-slate-300 text-sm">System Architect တစ်ဦး၏ အဓိက တာဝန်ဖြစ်သော Embedded Linux Kernel Architecture၊ Storage Management (LVM/Flash Memory) နှင့် Custom File System များကို နားလည်ခြင်း၊ Robotics/IoT/AI စနစ်များအတွက် Custom OS များကို (Buildroot/Yocto) ဖြင့် တည်ဆောက်ခြင်း နှင့် QEMU ဖြင့် စမ်းသစ်ခြင်းတို့ကို လေ့လာရပါမည်။</p>
           
           <ul class="mt-3 space-y-2 text-slate-200 list-disc list-inside">
-            <li><strong>4.1 Linux Storage Management</strong> Partitioning Schemes (GPT vs. MBR). Physical vs. Logical Volumes. Linux Volume Management (LVM) for flexible storage.</li>
-            <li><strong>4.2 File Systems & Mounting</strong> Common Linux File Systems (ext4, XFS). Managing Mount Points. Network File System (<strong>NFS</strong>) setup and configuration.</li>
-            <li><strong>4.3 Linux Boot Process Deep Dive</strong> Detailed breakdown of the kernel loading and initialization process. The role of initramfs and systemd.</li>
-            <li><strong>4.4 Linux Kernel Modules</strong> Understanding Kernel Architecture. Loading, Unloading, and Managing Kernel Modules (Crucial for Custom Hardware Support).</li>
-            <li><strong>4.5 Custom OS Build Systems</strong> Buildroot Introduction: Creating a simple, minimal Linux root file system. Yocto Project (Poky) Architecture and Workflow.</li>
-            <li><strong>4.6 Custom OS Build Lab</strong> Test Build: Executing a <strong>Yocto</strong> or <strong>Buildroot</strong> build process to generate a complete custom OS image (for Embedded/IoT/AI systems).</li>
+            <li><strong>4.1 Linux Storage Management in Embedded Systems</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Partitioning Schemes: Review of GPT vs. MBR.</li>
+                <li>Flash Memory Concepts: Introduction to NOR and NAND Flash and their unique challenges (wear leveling, bad blocks).</li>
+                <li>Logical Volume Management (LVM) Review: When and why LVM is still relevant, even in embedded contexts.</li>
+              </ul>
+            </li>
+            <li><strong>4.2 Embedded & Custom File Systems</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Common Linux File Systems (ext4, XFS) and their limitations in embedded environments.</li>
+                <li>Specialized Embedded File Systems: Deep dive into JFFS2 (Journaling Flash File System, version 2) and UBIFS (Unsorted Block Image File System).</li>
+                <li>Read-Only Root Filesystems: Concepts of squashfs and tmpfs for system stability and power-loss robustness.</li>
+                <li>Network File System (NFS) setup for remote debugging and boot.</li>
+              </ul>
+            </li>
+            <li><strong>4.3 Embedded Linux Kernel Deep Dive</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Kernel Architecture Review: Monolithic vs. Microkernel, and the role of the Linux kernel in embedded systems.</li>
+                <li>The Boot Process (Revised): Focus on the bootloader (e.g., U-Boot concepts), kernel decompression, and the initial execution of the custom root filesystem.</li>
+                <li>Role of initramfs and systemd in a minimal environment.</li>
+              </ul>
+            </li>
+            <li><strong>4.4 Linux Kernel Modules and Device Drivers</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Kernel Configuration (menuconfig): Understanding how to select and compile only necessary features for a minimal, optimized kernel.</li>
+                <li>Loading, Unloading, and Managing Kernel Modules for custom hardware support.</li>
+                <li>Device Driver Introduction: Conceptual understanding of how to interface custom hardware using modules.</li>
+              </ul>
+            </li>
+            <li><strong>4.5 Custom OS Build Systems Architecture</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>Buildroot Introduction: Creating a simple, minimal Linux root file system and cross-compilation basics.</li>
+                <li>Yocto Project (Poky) Architecture and Workflow: Understanding the layers, recipes, and classes for industrial-grade custom OS creation.</li>
+                <li>Cross-Compilation Toolchain Concepts (Crucial for embedded development).</li>
+              </ul>
+            </li>
+            <li><strong>4.6 Lab: QEMU-Focused Embedded OS Development</strong>
+              <ul class="ml-5 mt-1 space-y-1 list-disc list-inside">
+                <li>QEMU Fundamentals: Installation, setup, and key arguments (-kernel, -initrd, -append, -hda).</li>
+                <li>Lab 1: Booting a Custom Kernel in QEMU: Booting a self-compiled kernel image with a minimal initramfs.</li>
+                <li>Lab 2: Testing Buildroot/Yocto Images in QEMU: Deploying and testing the complete custom OS image (from 4.5) inside the QEMU virtual environment.</li>
+              </ul>
+            </li>
             <li><strong>4.7 FINAL EXAM</strong> Comprehensive theoretical and conceptual exam covering all modules.</li>
           </ul>
         </div>
@@ -105,7 +172,7 @@
         </div>
         <div class="mt-4 rounded-lg border border-slate-800 bg-slate-900/40 p-4">
           <p class="font-semibold">Schedule</p>
-          <p class="text-slate-300 text-sm">1.5 hours, in a day, Fri, Sat, Sun<br>Will start from 19. Dec. 2025</p>
+          <p class="text-slate-300 text-sm">1.5 hours, in a day, Fri, Sat, Sun<br>- 8 PM to 9:30 PM<br>Will start from 19. Dec. 2025</p>
         </div>
       </section>
 
